@@ -4,6 +4,8 @@
  */
 package alvaro.taller1.biblioteca.git;
 
+import java.time.LocalDate;
+
 /**
  *
  * @author ALVARO
@@ -13,13 +15,13 @@ public class Prestamo {
     private String idPrestamo;
     private Cliente cliente;
     private Libro libro;
-    private localDate fecha;
+    private LocalDate fecha;
     private String estado;
 
     public Prestamo() {
     }
 
-    public Prestamo(String idPrestamo, Cliente cliente, Libro libro, localDate fecha, String estado) {
+    public Prestamo(String idPrestamo, Cliente cliente, Libro libro, LocalDate fecha, String estado) {
         this.idPrestamo = idPrestamo;
         this.cliente = cliente;
         this.libro = libro;
@@ -51,11 +53,11 @@ public class Prestamo {
         this.libro = libro;
     }
 
-    public localDate getFecha() {
+    public LocalDate getFecha() {
         return fecha;
     }
 
-    public void setFecha(localDate fecha) {
+    public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
     }
 
